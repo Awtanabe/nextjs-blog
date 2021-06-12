@@ -1,6 +1,11 @@
 const SideBar = () => {
   return (
-    <div>SideBar</div>
+    <div>SideBar
+
+     <style jsx>{`
+        flex: 1;
+     `}</style>
+    </div>
   )
 }
 
