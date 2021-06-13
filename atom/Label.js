@@ -12,6 +12,10 @@ const Label = (props) => {
           background-color: gray;
           color: white;
         }
+        .label-green {
+          background-color: rgba(209, 250, 229, 1);
+          color: white;
+        }
       `}</style>
     </div>
   )
