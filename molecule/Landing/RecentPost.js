@@ -2,9 +2,13 @@ import Label from '../../atom/Label'
 import User from '../../molecule/Landing/User'
 
 const RecentPost = () => {
+  const label = {
+    width: "100px",
+    margin: "0 auto"
+  }
   return (
     <div className="recent-post-container">
-      <div className="label-container">
+      <div className="label-container" style={label}>
         <Label name ="larabel" color="label-green"/>
       </div>
       <div className="title">
