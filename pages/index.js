@@ -14,10 +14,9 @@ export default function Home() {
       <style jsx>{`
         .container {
           padding: 0 0.5rem;
-          display: flex;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
+          width: 100vw;
+          height: 100vh;
         }
       `}</style>
 
@@ -31,9 +30,6 @@ export default function Home() {
             sans-serif;
         }
 
-        * {
-          box-sizing: border-box;
-        }
       `}</style>
     </div>
   )

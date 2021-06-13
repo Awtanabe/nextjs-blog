@@ -10,7 +10,8 @@ const Landing = () => {
       <style jsx>{`
         .landing-container{
           width: 100vw;
-          height: 100vh;
+          height: 1000px;
+          flex: 1;
           background-color: #e5e7eb;
           display: flex;  
         }
