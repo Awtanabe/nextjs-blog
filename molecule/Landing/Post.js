@@ -1,14 +1,16 @@
 import User from "./User"
 import Label from "../../atom/Label"
+import Date from "../../atom/Post/Date"
 
 const Post = (props) => {
   return (
     <div className="post-container">
       <div className="post-header">
-        <div className="title">
-          {props.title}
-        </div>
+        <Date/>
         <Label name="Larabel" color="label-primary"/>
+      </div>
+      <div className="title">
+          {props.title}
       </div>
       <div className="body">
         {props.body}
