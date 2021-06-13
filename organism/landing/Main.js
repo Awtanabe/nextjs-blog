@@ -1,17 +1,22 @@
 const lists = [{title: "Build Your New Idea with Laravel Freamwork.", body: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!"},{title: "Build Your New Idea with Laravel Freamwork.", body: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!"},{title: "Build Your New Idea with Laravel Freamwork.", body: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!"}
 ]
-import Item from "../../molecule/Landing/Item"
+import Post from "../../molecule/Landing/Post"
 const Main = () => {
   
   return (
     <div className="main-container">
-      Post
+      <div className="post-title">Post</div>
       {lists.map((list) => {
-        return <Item {...list}/>
+        return <Post {...list}/>
       })}
       <style jsx>{`
-        flex: 2;
-        padding: 0 50px;
+        .main-container {
+          flex: 2;
+          padding: 0 50px;  
+        }
+        .post-title {
+          font-weight: bold;
+        }
       `}</style>
     </div>
   )
